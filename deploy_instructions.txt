@@ -1,0 +1,4 @@
+Deployment notes:
+- For Streamlit Cloud: push this repository to GitHub, then create a new app on Streamlit Cloud and connect the GitHub repo. Streamlit Cloud will install from requirements.txt and run `streamlit run app.py` automatically.
+- For Heroku: create a Procfile with `web: streamlit run app.py --server.port=$PORT`. Heroku may require additional setup for SQLite; using PostgreSQL would be better for production.
+- For quick local testing, run `streamlit run app.py` locally.
